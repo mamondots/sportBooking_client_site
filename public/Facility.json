@@ -1,0 +1,48 @@
+[
+  {
+    "id": "5",
+    "img": "https://i.ibb.co/4ZszHGN/pexels-karolina-2031292-3669288.jpg",
+    "name": "Mountain View Climbing Gym",
+    "description": "A rock climbing gym featuring bouldering walls, rope climbs, and classes for all skill levels.",
+    "pricePerHour": 35,
+    "location": "Hillside Boulevard, Mountain View",
+    "isDeleted": false
+  },
+
+  {
+    "id": "2",
+    "img": "https://i.ibb.co/XXx6PmL/pexels-ryutaro-5472280.jpg",
+    "name": "Greenwood Park Tennis Courts",
+    "description": "Outdoor tennis courts surrounded by greenery, perfect for both casual and professional players.",
+    "pricePerHour": 30,
+    "location": "Greenwood Park, Westside",
+    "isDeleted": false
+  },
+  {
+    "id": "3",
+    "img": "https://i.ibb.co/crfTV2t/pexels-tima-miroshnichenko-6389865.jpg",
+    "name": "The Fitness Hub",
+    "description": "An all-in-one fitness center with a fully-equipped gym, aerobics studio, and yoga rooms.",
+    "pricePerHour": 25,
+    "location": "Main Street, Uptown",
+    "isDeleted": false
+  },
+  {
+    "id": "4",
+    "img": "https://i.ibb.co/FzGcy8P/pexels-riciardus-41257.jpg",
+    "name": "Sunnyvale Soccer Arena",
+    "description": "A premium indoor soccer facility with artificial turf and stadium lighting for night games.",
+    "pricePerHour": 45,
+    "location": "Old Town Road, Sunnyvale",
+    "isDeleted": true
+  },
+  {
+    "id": "1",
+    "img": "https://i.ibb.co/c8w1WFf/pexels-jeffrey-marvin-forones-2843740-4381966.jpg",
+    "name": "City Sports Center",
+    "description": "A state-of-the-art sports complex offering indoor and outdoor facilities including basketball courts, soccer fields, and a swimming pool.",
+    "pricePerHour": 50,
+    "location": "Downtown Avenue, Cityville",
+    "isDeleted": false
+  }
+]
