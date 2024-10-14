@@ -18,8 +18,8 @@ const AllFacilitiesPage = () => {
   const [pageSize, setPageSize] = useState<number>(4);
   const queryArgs = [
     { name: "search", value: search },
-    { name: "page", value: 1 },
-    { name: "limit", value: 6 },
+    { name: "page", value: 2 },
+    { name: "limit", value: 12 },
     { name: "minPrice", value: minPrice },
     { name: "maxPrice", value: maxPrice },
     { name: "page", value: currentPage.toString() },
@@ -27,10 +27,12 @@ const AllFacilitiesPage = () => {
   ];
 
   const { data: facilities, isLoading } = useGetFacilitiesQuery(queryArgs);
-  console.log(facilities);
+
   const filterFacilitiesData = facilities?.data?.data?.filter(
     (item: { isDeleted: boolean }) => item.isDeleted !== true
   );
+
+  console.log(filterFacilitiesData);
 
   if (isLoading) {
     return (
@@ -91,24 +93,12 @@ const AllFacilitiesPage = () => {
             />
           </div>
         </form>
-        {/* <JustSeach setFieldQuery={setFieldQuery}></JustSeach> */}
       </div>
-      <div>
-        {/* <div>
-          <Search
-            className="py-6 px-4 rounded outline-none"
-            placeholder="input search text"
-            allowClear
-            enterButton="Search"
-            size="middle"
-            onSearch={onSearch}
-          />
-        </div> */}
-      </div>
+      <div></div>
 
       <div className="flex items-center justify-between py-4">
         <p className="text-xl font-medium lg:flex md:flex sm:flex hidden">
-          Total Ficilities - <span>{filterFacilitiesData.length}</span>
+          Total Ficilities - <span>{filterFacilitiesData?.length}</span>
         </p>
         <div>
           <form>

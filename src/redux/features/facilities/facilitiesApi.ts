@@ -5,7 +5,6 @@ const facilitiesApi = baseApi.injectEndpoints({
   endpoints: (builder) => ({
     getFacilities: builder.query({
       query: (args) => {
-        console.log(args);
         const params = new URLSearchParams();
 
         if (args) {

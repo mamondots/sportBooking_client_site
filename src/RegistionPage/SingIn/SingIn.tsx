@@ -78,7 +78,7 @@ const SingIn = () => {
                   type="email"
                   placeholder="Email..."
                 />
-                {errors.password && (
+                {errors.email && (
                   <span className="text-[#ce4646]">This field is required</span>
                 )}
               </div>
